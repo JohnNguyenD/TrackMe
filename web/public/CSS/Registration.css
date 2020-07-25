@@ -1,0 +1,72 @@
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5em;
+}
+
+body {
+  background: linear-gradient(to top right, #000000, #f0f0f2);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(219, 100, 100, 0.747) !important;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+form {
+  width: 20em;
+  margin: 2em auto;
+  min-height: calc(65vh - 2em);
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 0 auto;
+  display: flex;
+}
+
+.firstP {
+  margin-top: 2em;
+  text-align: center;
+}
+
+#FailMessage {
+  color: #414188;
+  text-align: center;
+  font-weight: bold;
+  background-color: pink;
+}
+#message {
+  color: #414188;
+  font-weight: lighter;
+}
+#footer {
+  border-top: 0.5px solid grey;
+  text-align: center;
+  color: blanchedalmond;
+}
