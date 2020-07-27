@@ -10,9 +10,12 @@
     "mongoose": "^5.9.25"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "apidoc": "^0.24.0",
+    "nodemon": "^2.0.4",
+    "webpack-apidoc": "^0.1.1"
   },
   "scripts": {
+    "doc": "apidoc -o public/generated-docs/ -e node_modules/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon -r dotenv/config api.js"
   },
