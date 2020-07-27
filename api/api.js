@@ -4,10 +4,13 @@ const Device = require("./models/device");
 const command = require("./models/command");
 const User = require("./models/user");
 
-mongoose.connect(process.env.MONGO_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb+srv://JohnNguyen:t30101999@cluster0.cc3dy.mongodb.net",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 const app = express();
 // Parse the body

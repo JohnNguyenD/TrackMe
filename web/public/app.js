@@ -7,7 +7,7 @@ $("#footer").load("footer.html", function () {
   footerP.innerHTML = `&copy;Copyright Tuan Trung Nguyen ${year}`;
 });
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://trackme-ashy.vercel.app/api";
 const currentUser = localStorage.getItem("user");
 
 if (currentUser) {
