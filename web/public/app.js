@@ -1,3 +1,5 @@
+//const { response } = require("express");
+
 $("#navbar").load("navbar.html");
 $("#footer").load("footer.html", function () {
   var dt = new Date();
@@ -8,6 +10,7 @@ $("#footer").load("footer.html", function () {
 });
 
 const API_URL = "https://trackme-ashy.vercel.app/api";
+const MQTT_URL = "http://localhost:5001";
 const currentUser = localStorage.getItem("user");
 
 if (currentUser) {
@@ -76,7 +79,7 @@ $("#add-device").on("click", function (e) {
     sensorData,
   };
 
-  $.post("`${API_URL}/devices`", body)
+  $.post(`${API_URL}/devices`, body)
     .then((response) => {
       location.href = "/";
     })
@@ -86,10 +89,21 @@ $("#add-device").on("click", function (e) {
 });
 
 //Send Command
-$("#send-command").on("click", function () {
+$("#send-command").on("click", function (e) {
   e.preventDefault();
+  const deviceID = $("#deviceID").val();
   const command = $("#command").val();
-  console.log(`command is: ${command}`);
+
+  $.post(`${MQTT_URL}/send-command`, {
+    deviceId: deviceID,
+    command: command,
+  })
+    .then((response) => {
+      location.href = "/";
+    })
+    .catch((err) => {
+      console.log(`Error: ${err}`);
+    });
 });
 
 //Register user

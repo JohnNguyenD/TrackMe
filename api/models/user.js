@@ -12,7 +12,6 @@ const userSchema = new Schema({
   },
   isAdmin: {
     type: Boolean,
-    require: true,
   },
 });
 

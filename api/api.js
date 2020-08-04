@@ -13,6 +13,8 @@ mongoose.connect(
 );
 
 const app = express();
+app.use(express.static("public"));
+
 // Parse the body
 const bodyParser = require("body-parser");
 const { findOneAndUpdate } = require("./models/user");
@@ -114,12 +116,6 @@ app.post("/api/devices", (req, res) => {
  *   }
  */
 
-//Post new command
-app.post("/api/send-command", (req, res) => {
-  const { body } = req.body;
-  console.log(req.body);
-});
-
 /**
  * @api {get} /api/authenticate Authenticate Account
  * @apiGroup Authenticate
@@ -162,7 +158,7 @@ app.post("/api/authenticate", (req, res) => {
       } else {
         return res.json({
           success: true,
-          message: "Login succesfully",
+          message: "Login successfully",
           isAdmin: user.isAdmin,
         });
       }
