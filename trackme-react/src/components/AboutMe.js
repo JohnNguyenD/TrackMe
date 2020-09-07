@@ -26,7 +26,7 @@ const AboutMe = () => {
           <h2>Units I have completed so far</h2>
           <ol>
             <li>SIT122 ROBOTIC STUDIOS</li>
-            <li>Hello that's awesome hello</li>
+            <li>Hello that's awesome hello hello</li>
             <li>SIT232 OBJECT-ORIENTED DEVELOPMENT</li>
             <li>SIT190 INTRODUCTORY MATHEMATICAL METHODS</li>
             <li>
