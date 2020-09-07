@@ -104,20 +104,7 @@ app.post("/api/devices", (req, res) => {
 });
 
 /**
- * @api {get} /api/send-command Send command
- * @apiGroup Command
- * @apiSuccessExample {json} Success-Response:
- *{
- *   "body": Delete all the Sam devices
- *}
- * @apiErrorExample {json} Error-Response:
- *   {
- *     "Command does not exist"
- *   }
- */
-
-/**
- * @api {get} /api/authenticate Authenticate Account
+ * @api {post} /api/authenticate Authenticate Account
  * @apiGroup Authenticate
  * @apiSuccessExample {json} Success-Response:
  *{
@@ -167,7 +154,7 @@ app.post("/api/authenticate", (req, res) => {
 });
 
 /**
- * @api {get} /api/registration Register New Account
+ * @api {post} /api/registration Register New Account
  * @apiGroup Register
  * @apiSuccessExample {json} Success-Response:
  *{

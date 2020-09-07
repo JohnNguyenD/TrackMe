@@ -1,0 +1,116 @@
+#devices {
+  width: 50%;
+  margin: 50px;
+  text-align: center;
+}
+
+#users {
+  width: 50%;
+  margin: 20px;
+  text-align: center;
+}
+
+.table-primary {
+  text-transform: uppercase;
+}
+.form-group {
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+html {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+label {
+  margin-top: 20px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+form {
+  width: 20em;
+  min-height: calc(93vh - 56px);
+  margin: 0 auto;
+}
+.btn {
+  margin: auto;
+  display: flex;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(219, 100, 100, 0.747) !important;
+}
+#main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.main {
+  margin-top: 7em;
+  min-height: calc(100vh - 7em - 42px);
+}
+
+.mainUser {
+  margin: 10em auto;
+}
+
+/* Send Command, Register device */
+.firstP {
+  margin-top: 2em;
+  text-align: center;
+}
+#command-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Footer */
+#footer {
+  border-top: 0.5px solid grey;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+#FailMessage {
+  color: #414188;
+  text-align: center;
+  font-weight: bold;
+  background-color: pink;
+}
+#message {
+  color: #414188;
+  font-weight: lighter;
+}
